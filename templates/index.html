@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Adulteration Detection</title>
+</head>
+<body>
+    <h1>Food Adulteration Detection</h1>
+    <form action="/predict" method="post">
+        <label for="carbohydrates">Carbohydrates (grams):</label><br>
+        <input type="number" id="carbohydrates" name="carbohydrates" step="0.1" min="0" max="100"><br><br>
+        
+        <label for="protein">Protein (grams):</label><br>
+        <input type="number" id="protein" name="protein" step="0.1" min="0" max="100"><br><br>
+
+        <label for="fat">Fat (grams):</label><br>
+        <input type="number" id="fat" name="fat" step="0.1" min="0" max="100"><br><br>
+
+        <label for="preservatives">Preservatives (grams):</label><br>
+        <input type="number" id="preservatives" name="preservatives" step="0.1" min="0" max="10"><br><br>
+
+        <label for="artificial_sweeteners">Artificial Sweeteners (grams):</label><br>
+        <input type="number" id="artificial_sweeteners" name="artificial_sweeteners" step="0.1" min="0" max="5"><br><br>
+
+        <label for="sugar">Sugar (grams):</label><br>
+        <input type="number" id="sugar" name="sugar" step="0.1" min="0" max="50"><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
